@@ -59,4 +59,8 @@ function menu(){
 
 let menuFetcher = menu();
 
+app.post("/tallyUp", function(req,res){
+  console.log(req.body);
+})
+
 app.listen(8080, function(){ console.log("listening on port 8080"); });
