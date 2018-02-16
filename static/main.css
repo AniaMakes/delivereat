@@ -45,7 +45,18 @@
   padding-right: 0;
 }
 
+#proceedToSummary{
+  visibility: hidden;
+}
+
 table{
   table-layout: fixed;
   width: 100%;
+}
+
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color:#fff;
 }
