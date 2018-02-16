@@ -12,55 +12,123 @@
 </head>
 <body>
   <h2>Welcome to OmNomBox</h2>
+  <button class="btn" id="place-order">Ready to order? Click here to make your selection</button>
   <div class="container">
+    <form>
     <div class="row starters">
       <div class="col">
+        <h3>Starters</h3>
         <table>
           {{#each starters}}
             <tr>
-              <td>{{{this.name}}}</td>
-              <td>£{{{this.price}}}</td>
+              <td class="table-name">{{{this.name}}}</td>
+              <td class="table-price">£{{{this.price}}}</td>
+              <td class="quantity-picker">
+                <select>
+                  <option value="{{{this.code}}}-0">0</option>
+                  <option value="{{{this.code}}}-1">1</option>
+                  <option value="{{{this.code}}}-2">2</option>
+                  <option value="{{{this.code}}}-3">3</option>
+                  <option value="{{{this.code}}}-4">4</option>
+                  <option value="{{{this.code}}}-5">5</option>
+                  <option value="{{{this.code}}}-6">6</option>
+                  <option value="{{{this.code}}}-7">7</option>
+                  <option value="{{{this.code}}}-8">8</option>
+                  <option value="{{{this.code}}}-9">9</option>
+                  <option value="{{{this.code}}}-10">10</option>
+                </select>
+              </td>
             </tr>
           {{/each}}
-        <table>
+        </table>
       </div>
     </div>
     <div class="row mains">
       <div class="col">
+        <h3>Mains</h3>
         <table>
           {{#each mains}}
             <tr>
-              <td>{{{this.name}}}</td>
-              <td>£{{{this.price}}}</td>
+              <td class="table-name">{{{this.name}}}</td>
+              <td class="table-price">£{{{this.price}}}</td>
+              <td class="quantity-picker">
+                <select>
+                  <option value="{{{this.code}}}-0">0</option>
+                  <option value="{{{this.code}}}-1">1</option>
+                  <option value="{{{this.code}}}-2">2</option>
+                  <option value="{{{this.code}}}-3">3</option>
+                  <option value="{{{this.code}}}-4">4</option>
+                  <option value="{{{this.code}}}-5">5</option>
+                  <option value="{{{this.code}}}-6">6</option>
+                  <option value="{{{this.code}}}-7">7</option>
+                  <option value="{{{this.code}}}-8">8</option>
+                  <option value="{{{this.code}}}-9">9</option>
+                  <option value="{{{this.code}}}-10">10</option>
+                </select>
+              </td>
             </tr>
           {{/each}}
-        <table>
+        </table>
       </div>
     </div>
     <div class="row desserts">
       <div class="col">
+        <h3>Desserts</h3>
         <table>
           {{#each desserts}}
             <tr>
-              <td>{{{this.name}}}</td>
-              <td>£{{{this.price}}}</td>
+              <td class="table-name">{{{this.name}}}</td>
+              <td class="table-price">£{{{this.price}}}</td>
+              <td class="quantity-picker">
+                <select>
+                  <option value="{{{this.code}}}-0">0</option>
+                  <option value="{{{this.code}}}-1">1</option>
+                  <option value="{{{this.code}}}-2">2</option>
+                  <option value="{{{this.code}}}-3">3</option>
+                  <option value="{{{this.code}}}-4">4</option>
+                  <option value="{{{this.code}}}-5">5</option>
+                  <option value="{{{this.code}}}-6">6</option>
+                  <option value="{{{this.code}}}-7">7</option>
+                  <option value="{{{this.code}}}-8">8</option>
+                  <option value="{{{this.code}}}-9">9</option>
+                  <option value="{{{this.code}}}-10">10</option>
+                </select>
+              </td>
             </tr>
           {{/each}}
-        <table>
+        </table>
       </div>
     </div>
     <div class="row drinks">
       <div class="col">
+        <h3>Drinks</h3>
         <table>
           {{#each drinks}}
             <tr>
-              <td>{{{this.name}}}</td>
-              <td>£{{{this.price}}}</td>
+              <td class="table-name">{{{this.name}}}</td>
+              <td class="table-price">£{{{this.price}}}</td>
+              <td class="quantity-picker">
+                <select>
+                  <option value="{{{this.code}}}-0">0</option>
+                  <option value="{{{this.code}}}-1">1</option>
+                  <option value="{{{this.code}}}-2">2</option>
+                  <option value="{{{this.code}}}-3">3</option>
+                  <option value="{{{this.code}}}-4">4</option>
+                  <option value="{{{this.code}}}-5">5</option>
+                  <option value="{{{this.code}}}-6">6</option>
+                  <option value="{{{this.code}}}-7">7</option>
+                  <option value="{{{this.code}}}-8">8</option>
+                  <option value="{{{this.code}}}-9">9</option>
+                  <option value="{{{this.code}}}-10">10</option>
+                </select>
+              </td>
             </tr>
           {{/each}}
-        <table>
+        </table>
       </div>
     </div>
+</form>
   </div>
+  <script src="/static/client.js"></script>
 </body>
 </html>
