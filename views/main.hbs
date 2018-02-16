@@ -13,8 +13,52 @@
 <body>
   <h2>Welcome to OmNomBox</h2>
   <div class="container">
-    <div class="row">
+    <div class="row starters">
       <div class="col">
+        <table>
+          {{#each starters}}
+            <tr>
+              <td>{{{this.name}}}</td>
+              <td>£{{{this.price}}}</td>
+            </tr>
+          {{/each}}
+        <table>
+      </div>
+    </div>
+    <div class="row mains">
+      <div class="col">
+        <table>
+          {{#each mains}}
+            <tr>
+              <td>{{{this.name}}}</td>
+              <td>£{{{this.price}}}</td>
+            </tr>
+          {{/each}}
+        <table>
+      </div>
+    </div>
+    <div class="row desserts">
+      <div class="col">
+        <table>
+          {{#each desserts}}
+            <tr>
+              <td>{{{this.name}}}</td>
+              <td>£{{{this.price}}}</td>
+            </tr>
+          {{/each}}
+        <table>
+      </div>
+    </div>
+    <div class="row drinks">
+      <div class="col">
+        <table>
+          {{#each drinks}}
+            <tr>
+              <td>{{{this.name}}}</td>
+              <td>£{{{this.price}}}</td>
+            </tr>
+          {{/each}}
+        <table>
       </div>
     </div>
   </div>
