@@ -6,11 +6,24 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "AniaMakes",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "node-fetch": "^2.0.0",
+    "nodemon": "^1.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/constructorlabs/delivereat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/constructorlabs/delivereat/issues"
+  },
+  "homepage": "https://github.com/constructorlabs/delivereat#readme",
+  "devDependencies": {
     "jest": "^22.3.0"
   }
 }
