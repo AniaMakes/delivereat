@@ -23,10 +23,11 @@ app.get("/menu", function (req,res){
 })
 
 app.post("/tallyUp", (req,res) => {
-  tallyUpSingleOrder(req.body, menu, function (out) {
+  let order = tallyUpSingleOrder(req.body, menu);
+  console.log(order);
 
-    res.send("whatever");
-  });
+  res.json(order);
+
 });
 
 app.listen(8080, function(){ console.log("listening on port 8080"); });

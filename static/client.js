@@ -34,7 +34,7 @@ function tallyUp(event){
 
   postData("http://localhost:8080/tallyUp", order)
     .then(function (data){
-      console.log(data);
+      console.log("I received data: ", data);
     })
     .catch(error => console.error(error));
 
